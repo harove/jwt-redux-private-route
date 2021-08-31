@@ -12,7 +12,7 @@ export const userLogin = ({ username, password }) => {
     };
     
     try {
-      fetch("http://localhost:4000/auth/login", {
+      fetch("https://mock-server-dl.herokuapp.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

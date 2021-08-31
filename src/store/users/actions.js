@@ -12,7 +12,7 @@ export const usersList = () => {
     };
     
     try {
-      fetch("http://localhost:4000/users", {
+      fetch("https://mock-server-dl.herokuapp.com/users", {
         method: "GET",
         headers: {'Authorization':`Bearer ${localStorage.jwt}`}
       }).then((response)=>{
