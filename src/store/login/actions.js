@@ -1,9 +1,10 @@
+import { browserHistory } from "../../history/history";
 import { LOGIN_USER_ERROR, LOGIN_USER_INIT, LOGIN_USER_SUCCESS } from "./types";
 
-export const userLogin = ({ username, password }) => {
+export const userLogin = ( form, cb ) => {
+  const {username,password} = form
   return (dispatch) => {
     dispatch({ type: LOGIN_USER_INIT });
-
     const loginSuccess = (username) => {    
       dispatch({ type: LOGIN_USER_SUCCESS, payload: username });
     };
@@ -27,6 +28,7 @@ export const userLogin = ({ username, password }) => {
         if (data.jwt){
           localStorage.jwt=data.jwt
           loginSuccess(username);
+          cb()
         }
         else
           loginFail(data.error);

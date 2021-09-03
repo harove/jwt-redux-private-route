@@ -13,17 +13,16 @@ import { useSelector } from "react-redux";
 
 function App() {
   const isLogin = useSelector(state => state.login.success)
-  debugger
 
   return (
     <div className="App container">
       <Router>
-        <nav className="navbar">
-          <ul>
-            <li>
-              <NavLink className="nav-item" to="/">Home</NavLink>
+        <nav className="navbar navbar-expand-lg">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <NavLink to="/">Home</NavLink>
             </li>
-            <li>
+            <li className="nav-item">
               <NavLink to="/users">Users</NavLink>
             </li>
           </ul>

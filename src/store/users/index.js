@@ -3,7 +3,7 @@ const initialStore = {
   data: [],
   error: null,
   success: null,
-  loading: false,
+  loadingUsers: false,
 };
 
 
@@ -11,20 +11,20 @@ export const usersReducer = (prevState = initialStore, action) => {
   switch (action.type) {
     case LIST_USERS_INIT:
       return {...prevState,
-        loading: true,
+        loadingUsers: true,
       };
     case LIST_USERS_SUCCESS:
       return {...prevState, 
         data: action.payload,
         error: false,
         success: true,
-        loading: false,
+        loadingUsers: false,
       };
     case LIST_USERS_ERROR:
       return {...prevState,
         error: action.payload,
         success: false,
-        loading: false,
+        loadingUsers: false,
       };
     default:
       return prevState;

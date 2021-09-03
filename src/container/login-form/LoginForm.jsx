@@ -1,36 +1,38 @@
 import React, { useState, useCallback } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router";
 import { userLogin } from "../../store/login/actions";
 
 export const LoginForm = ({ isLoading }) => {
+  let loadingUsers = useSelector(state=>state.users.loadingUsers);
+  const history = useHistory();
   const [form, setForm] = useState({
     username: "",
     password: "",
-    email2:"email2"
+    email2: "email2",
   });
   const dispatch = useDispatch();
 
   const handleInputChange = (event) => {
-      const target = event.target;
-      setForm({
-        ...form,
-        [target.name]: target.value,
-      });
-    }
+    const target = event.target;
+    setForm({
+      ...form,
+      [target.name]: target.value,
+    });
+  };
 
-  const handleSubmit = useCallback(
-    (event) => {
-      event.preventDefault();
-      dispatch(userLogin(form));
-    },
-    [dispatch, form]
-  );
+  const cb = () => history.push("/users");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    dispatch(userLogin(form, cb));
+  };
 
   return (
     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
       <div className="card">
         <input
-          id='username'
+          id="username"
           name="username"
           className="form-control username"
           placeholder="username"
@@ -63,10 +65,10 @@ export const LoginForm = ({ isLoading }) => {
           id="buttonSubmit"
           className="btn btn-primary"
           color="primary"
-          disabled={isLoading}
+          disabled={loadingUsers}
           type="submit"
         >
-          {isLoading ? "Loading..." : "Submit"}
+          {loadingUsers ? "Loading..." : "Submite"}
         </button>
       </div>
     </form>
