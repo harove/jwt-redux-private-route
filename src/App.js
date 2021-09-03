@@ -10,6 +10,7 @@ import {
 import UsersList from "./container/users-list/UsersList";
 import PrivateRoute from "./components/privateRoute/PrivateRoute";
 import { useSelector } from "react-redux";
+import UserDelete from "./container/user-delete/UserDelete";
 
 function App() {
   const isLogin = useSelector(state => state.login.success)
@@ -30,6 +31,9 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <Login />
+          </Route>
+          <Route path="/users/remove/:id">
+            <UserDelete />
           </Route>
           <PrivateRoute path="/users" isLogin={isLogin} component={UsersList}  exact/>
         </Switch>
