@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/jwt-redux-private-route/static/css/main.a617e044.chunk.css",
-    "main.js": "/jwt-redux-private-route/static/js/main.1da68845.chunk.js",
-    "main.js.map": "/jwt-redux-private-route/static/js/main.1da68845.chunk.js.map",
-    "runtime-main.js": "/jwt-redux-private-route/static/js/runtime-main.bb916a67.js",
-    "runtime-main.js.map": "/jwt-redux-private-route/static/js/runtime-main.bb916a67.js.map",
+    "main.js": "/jwt-redux-private-route/static/js/main.1af3b65f.chunk.js",
+    "main.js.map": "/jwt-redux-private-route/static/js/main.1af3b65f.chunk.js.map",
+    "runtime-main.js": "/jwt-redux-private-route/static/js/runtime-main.11828485.js",
+    "runtime-main.js.map": "/jwt-redux-private-route/static/js/runtime-main.11828485.js.map",
     "static/css/2.983f79de.chunk.css": "/jwt-redux-private-route/static/css/2.983f79de.chunk.css",
-    "static/js/2.418012d2.chunk.js": "/jwt-redux-private-route/static/js/2.418012d2.chunk.js",
-    "static/js/2.418012d2.chunk.js.map": "/jwt-redux-private-route/static/js/2.418012d2.chunk.js.map",
-    "static/js/3.031b66bb.chunk.js": "/jwt-redux-private-route/static/js/3.031b66bb.chunk.js",
-    "static/js/3.031b66bb.chunk.js.map": "/jwt-redux-private-route/static/js/3.031b66bb.chunk.js.map",
+    "static/js/2.97f8d148.chunk.js": "/jwt-redux-private-route/static/js/2.97f8d148.chunk.js",
+    "static/js/2.97f8d148.chunk.js.map": "/jwt-redux-private-route/static/js/2.97f8d148.chunk.js.map",
+    "static/js/3.845cc568.chunk.js": "/jwt-redux-private-route/static/js/3.845cc568.chunk.js",
+    "static/js/3.845cc568.chunk.js.map": "/jwt-redux-private-route/static/js/3.845cc568.chunk.js.map",
     "index.html": "/jwt-redux-private-route/index.html",
     "static/css/2.983f79de.chunk.css.map": "/jwt-redux-private-route/static/css/2.983f79de.chunk.css.map",
     "static/css/main.a617e044.chunk.css.map": "/jwt-redux-private-route/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.418012d2.chunk.js.LICENSE.txt": "/jwt-redux-private-route/static/js/2.418012d2.chunk.js.LICENSE.txt",
+    "static/js/2.97f8d148.chunk.js.LICENSE.txt": "/jwt-redux-private-route/static/js/2.97f8d148.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/jwt-redux-private-route/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.bb916a67.js",
+    "static/js/runtime-main.11828485.js",
     "static/css/2.983f79de.chunk.css",
-    "static/js/2.418012d2.chunk.js",
+    "static/js/2.97f8d148.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.1da68845.chunk.js"
+    "static/js/main.1af3b65f.chunk.js"
   ]
 }
